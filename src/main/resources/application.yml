@@ -1,0 +1,10 @@
+server:
+  port: 8085
+spring:
+  profiles:
+    active: pro
+mybatis:
+  configuration:
+    mapUnderscoreToCamelCase: false
+  type-aliases-package: com.example.redis_demo.model
+  mapper-locations: classpath*:mapping/*.xml

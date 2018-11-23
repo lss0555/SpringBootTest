@@ -1,10 +1,13 @@
-package com.example.redis_demo.controller;
+package com.example.springbootTest.controller;
 
-import com.example.redis_demo.dao.inter.PatientDaoInter;
-import com.example.redis_demo.dao.inter.UserDaoInter;
-import com.example.redis_demo.model.Patient;
-import com.example.redis_demo.model.TResult;
-import com.example.redis_demo.model.User;
+import com.example.springbootTest.common.aop.LogAspect;
+import com.example.springbootTest.dao.inter.PatientDaoInter;
+import com.example.springbootTest.dao.inter.UserDaoInter;
+import com.example.springbootTest.model.Patient;
+import com.example.springbootTest.model.TResult;
+import com.example.springbootTest.model.User;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -18,6 +21,8 @@ import java.util.List;
  **/
 @RestController
 public class TestController {
+    private Logger logger = LoggerFactory.getLogger(TestController.class);
+
     @Resource
     UserDaoInter userDaoInter;
 
@@ -26,6 +31,7 @@ public class TestController {
 
     @GetMapping("/test")
     public String test(){
+        logger.info("测试");
         return "hello  world";
     }
 

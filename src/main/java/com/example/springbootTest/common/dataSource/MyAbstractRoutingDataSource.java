@@ -1,4 +1,4 @@
-package com.example.redis_demo.common;
+package com.example.springbootTest.common.dataSource;
 
 import org.springframework.jdbc.datasource.lookup.AbstractRoutingDataSource;
 

@@ -6,5 +6,8 @@ spring:
 mybatis:
   configuration:
     mapUnderscoreToCamelCase: false
-  type-aliases-package: com.example.redis_demo.model
+  type-aliases-package: com.example.springbootTest.model
   mapper-locations: classpath*:mapping/*.xml
+
+logging:
+  config: classpath:logback-pro.xml

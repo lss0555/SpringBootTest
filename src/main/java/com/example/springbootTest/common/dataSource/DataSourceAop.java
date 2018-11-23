@@ -1,4 +1,4 @@
-package com.example.redis_demo.common;
+package com.example.springbootTest.common.dataSource;
 import lombok.extern.slf4j.Slf4j;
 import org.aspectj.lang.JoinPoint;
 import org.aspectj.lang.annotation.After;
@@ -17,7 +17,7 @@ import java.lang.reflect.Method;
 @Slf4j
 public class DataSourceAop {
 
-    @Before("@annotation(TargetDataSource)")
+    @Before("@annotation(com.example.springbootTest.common.dataSource.TargetDataSource)")
     public void setWriteDataSourceType(JoinPoint point) {
         //获得当前访问的class
         Class<?> className = point.getTarget().getClass();
@@ -42,7 +42,7 @@ public class DataSourceAop {
         // 切换数据源
         DataSourceContextHolder.setJdbcType(dataSource);
     }
-    @After("@annotation(TargetDataSource)")
+    @After("@annotation(com.example.springbootTest.common.dataSource.TargetDataSource)")
     public void afterSwitchDS(JoinPoint point){
         DataSourceContextHolder.clearDB();
     }

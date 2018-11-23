@@ -1,4 +1,4 @@
-package com.example.redis_demo.model;
+package com.example.springbootTest.model;
 
 import lombok.Getter;
 import lombok.Setter;

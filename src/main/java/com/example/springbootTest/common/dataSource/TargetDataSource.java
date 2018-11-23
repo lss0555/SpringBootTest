@@ -1,4 +1,4 @@
-package com.example.redis_demo.common;
+package com.example.springbootTest.common.dataSource;
 import java.lang.annotation.*;
 
 @Target({ElementType.METHOD, ElementType.TYPE})

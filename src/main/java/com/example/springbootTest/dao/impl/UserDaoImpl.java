@@ -1,9 +1,9 @@
-package com.example.redis_demo.dao.impl;
+package com.example.springbootTest.dao.impl;
 
-import com.example.redis_demo.common.TargetDataSource;
-import com.example.redis_demo.dao.inter.UserDaoInter;
-import com.example.redis_demo.dao.mapper.UserDaoMapper;
-import com.example.redis_demo.model.User;
+import com.example.springbootTest.common.dataSource.TargetDataSource;
+import com.example.springbootTest.dao.inter.UserDaoInter;
+import com.example.springbootTest.dao.mapper.UserDaoMapper;
+import com.example.springbootTest.model.User;
 import org.springframework.stereotype.Repository;
 
 import javax.annotation.Resource;

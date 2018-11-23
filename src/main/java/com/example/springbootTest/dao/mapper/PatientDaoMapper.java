@@ -1,7 +1,6 @@
-package com.example.redis_demo.dao.mapper;
+package com.example.springbootTest.dao.mapper;
 
-import com.example.redis_demo.model.Patient;
-import com.example.redis_demo.model.User;
+import com.example.springbootTest.model.Patient;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Select;
 

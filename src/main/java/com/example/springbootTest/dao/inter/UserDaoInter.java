@@ -1,6 +1,6 @@
-package com.example.redis_demo.dao.inter;
+package com.example.springbootTest.dao.inter;
 
-import com.example.redis_demo.model.User;
+import com.example.springbootTest.model.User;
 
 import java.util.List;
 

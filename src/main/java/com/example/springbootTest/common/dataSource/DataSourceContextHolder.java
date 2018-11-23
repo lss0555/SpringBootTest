@@ -1,4 +1,4 @@
-package com.example.redis_demo.common;
+package com.example.springbootTest.common.dataSource;
 
 /**
  * Description 本地线程全局变量  <br/>

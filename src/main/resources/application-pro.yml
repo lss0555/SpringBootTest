@@ -24,7 +24,25 @@ datasource:
     testOnReturn: false
     poolPreparedStatements: true
     maxOpenPreparedStatements: 20
-
+  read1:
+    url: jdbc:sqlserver://194.0.15.253;DatabaseName=his_qzzg
+    username: Jying_Huang@Java
+    password: (|Hu~Jiying)
+    driver-class-name: com.microsoft.sqlserver.jdbc.SQLServerDriver
+    filters: stat
+    maxActive: 20
+    initialSize: 1
+    maxWait: 60000
+    minIdle: 1
+    timeBetweenEvictionRunsMillis: 60000
+    minEvictableIdleTimeMillis: 300000
+    validationQueryTimeout: 900000
+    validationQuery: SELECT 1
+    testWhileIdle: true
+    testOnBorrow: false
+    testOnReturn: false
+    poolPreparedStatements: true
+    maxOpenPreparedStatements: 20
   read2:
     url: jdbc:mysql://127.0.0.1:3306/lss0555?useUnicode=true&characterEncoding=utf8
     username: root

@@ -3,11 +3,13 @@ server:
 spring:
   profiles:
     active: pro
+  aop:
+    auto: true
+    proxy-target-class: true
+
 mybatis:
   configuration:
     mapUnderscoreToCamelCase: false
   type-aliases-package: com.example.springbootTest.model
   mapper-locations: classpath*:mapping/*.xml
 
-logging:
-  config: classpath:logback-pro.xml

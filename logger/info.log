@@ -1,0 +1,72 @@
+2018-11-23 09:27:43 1952 [main] INFO  c.e.s.SpingbootTestApplication - Starting SpingbootTestApplication on XHCBT83Q10RRQ1S with PID 6900 (D:\J2EE_Workspace\springbootTest\target\classes started by lss0555 in D:\J2EE_Workspace\springbootTest)
+2018-11-23 09:27:43 1966 [main] INFO  c.e.s.SpingbootTestApplication - The following profiles are active: pro
+2018-11-23 09:28:16 2584 [main] INFO  c.e.s.SpingbootTestApplication - Starting SpingbootTestApplication on XHCBT83Q10RRQ1S with PID 5336 (D:\J2EE_Workspace\springbootTest\target\classes started by lss0555 in D:\J2EE_Workspace\springbootTest)
+2018-11-23 09:28:16 2595 [main] INFO  c.e.s.SpingbootTestApplication - The following profiles are active: pro
+2018-11-23 09:28:31 17491 [main] INFO  c.e.s.SpingbootTestApplication - Started SpingbootTestApplication in 16.755 seconds (JVM running for 18.083)
+2018-11-23 09:28:49 35443 [http-nio-8085-exec-1] INFO  c.e.s.controller.TestController - 测试info
+2018-11-23 10:08:47 2691 [main] INFO  c.e.s.SpingbootTestApplication - Starting SpingbootTestApplication on XHCBT83Q10RRQ1S with PID 6352 (D:\J2EE_Workspace\springbootTest\target\classes started by lss0555 in D:\J2EE_Workspace\springbootTest)
+2018-11-23 10:08:47 2698 [main] INFO  c.e.s.SpingbootTestApplication - The following profiles are active: pro
+2018-11-23 10:10:03 2613 [main] INFO  c.e.s.SpingbootTestApplication - Starting SpingbootTestApplication on XHCBT83Q10RRQ1S with PID 5172 (D:\J2EE_Workspace\springbootTest\target\classes started by lss0555 in D:\J2EE_Workspace\springbootTest)
+2018-11-23 10:10:03 2621 [main] INFO  c.e.s.SpingbootTestApplication - The following profiles are active: pro
+2018-11-23 10:10:19 18671 [main] INFO  c.e.s.SpingbootTestApplication - Started SpingbootTestApplication in 17.924 seconds (JVM running for 19.298)
+2018-11-23 10:10:25 24293 [http-nio-8085-exec-7] INFO  c.e.s.controller.TestController - 测试info
+2018-11-23 10:15:24 2662 [main] INFO  c.e.s.SpingbootTestApplication - Starting SpingbootTestApplication on XHCBT83Q10RRQ1S with PID 9560 (D:\J2EE_Workspace\springbootTest\target\classes started by lss0555 in D:\J2EE_Workspace\springbootTest)
+2018-11-23 10:15:24 2672 [main] INFO  c.e.s.SpingbootTestApplication - The following profiles are active: pro
+2018-11-23 10:15:41 20098 [main] INFO  c.e.s.SpingbootTestApplication - Started SpingbootTestApplication in 19.458 seconds (JVM running for 20.798)
+2018-11-23 10:15:46 25480 [http-nio-8085-exec-1] INFO  c.e.s.controller.TestController - 测试info
+2018-11-23 10:17:04 3151 [main] INFO  c.e.s.SpingbootTestApplication - Starting SpingbootTestApplication on XHCBT83Q10RRQ1S with PID 9072 (D:\J2EE_Workspace\springbootTest\target\classes started by lss0555 in D:\J2EE_Workspace\springbootTest)
+2018-11-23 10:17:04 3160 [main] INFO  c.e.s.SpingbootTestApplication - The following profiles are active: pro
+2018-11-23 10:17:39 3148 [main] INFO  c.e.s.SpingbootTestApplication - Starting SpingbootTestApplication on XHCBT83Q10RRQ1S with PID 8908 (D:\J2EE_Workspace\springbootTest\target\classes started by lss0555 in D:\J2EE_Workspace\springbootTest)
+2018-11-23 10:17:39 3155 [main] INFO  c.e.s.SpingbootTestApplication - The following profiles are active: pro
+2018-11-23 10:17:58 21344 [main] INFO  c.e.s.SpingbootTestApplication - Started SpingbootTestApplication in 20.565 seconds (JVM running for 21.935)
+2018-11-23 10:18:03 26460 [http-nio-8085-exec-1] INFO  c.e.s.controller.TestController - 测试info
+2018-11-23 10:20:34 2674 [main] INFO  c.e.s.SpingbootTestApplication - Starting SpingbootTestApplication on XHCBT83Q10RRQ1S with PID 3180 (D:\J2EE_Workspace\springbootTest\target\classes started by lss0555 in D:\J2EE_Workspace\springbootTest)
+2018-11-23 10:20:34 2685 [main] INFO  c.e.s.SpingbootTestApplication - The following profiles are active: pro
+2018-11-23 10:20:49 17998 [main] INFO  c.e.s.SpingbootTestApplication - Started SpingbootTestApplication in 17.244 seconds (JVM running for 18.619)
+2018-11-23 10:21:37 65398 [http-nio-8085-exec-10] INFO  c.e.s.controller.TestController - 测试info
+2018-11-23 10:22:53 2601 [main] INFO  c.e.s.SpingbootTestApplication - Starting SpingbootTestApplication on XHCBT83Q10RRQ1S with PID 9144 (D:\J2EE_Workspace\springbootTest\target\classes started by lss0555 in D:\J2EE_Workspace\springbootTest)
+2018-11-23 10:22:53 2609 [main] INFO  c.e.s.SpingbootTestApplication - The following profiles are active: pro
+2018-11-23 10:23:28 2791 [main] INFO  c.e.s.SpingbootTestApplication - Starting SpingbootTestApplication on XHCBT83Q10RRQ1S with PID 12612 (D:\J2EE_Workspace\springbootTest\target\classes started by lss0555 in D:\J2EE_Workspace\springbootTest)
+2018-11-23 10:23:28 2798 [main] INFO  c.e.s.SpingbootTestApplication - The following profiles are active: pro
+2018-11-23 10:23:45 19174 [main] INFO  c.e.s.SpingbootTestApplication - Started SpingbootTestApplication in 18.243 seconds (JVM running for 20.296)
+2018-11-23 10:23:49 23534 [http-nio-8085-exec-10] INFO  c.e.s.controller.TestController - 测试info
+2018-11-23 10:30:09 2709 [main] INFO  c.e.s.SpingbootTestApplication - Starting SpingbootTestApplication on XHCBT83Q10RRQ1S with PID 4560 (D:\J2EE_Workspace\springbootTest\target\classes started by lss0555 in D:\J2EE_Workspace\springbootTest)
+2018-11-23 10:30:09 2716 [main] INFO  c.e.s.SpingbootTestApplication - The following profiles are active: pro
+2018-11-23 10:30:26 19258 [main] INFO  c.e.s.SpingbootTestApplication - Started SpingbootTestApplication in 18.476 seconds (JVM running for 19.833)
+2018-11-23 10:30:42 35606 [http-nio-8085-exec-10] INFO  c.e.s.controller.TestController - 测试info
+2018-11-23 10:30:42 35627 [http-nio-8085-exec-10] INFO  c.e.s.common.aop.LogAspect - 接口日志:方法名称:com.example.springbootTest.controller.TestController---执行时间:---12
+2018-11-23 10:31:16 69756 [http-nio-8085-exec-9] INFO  c.e.s.controller.TestController - 测试info
+2018-11-23 10:31:16 69760 [http-nio-8085-exec-9] INFO  c.e.s.common.aop.LogAspect - 接口日志:方法名称:com.example.springbootTest.controller.TestController---执行时间:---4
+2018-11-23 10:32:16 3220 [main] INFO  c.e.s.SpingbootTestApplication - Starting SpingbootTestApplication on XHCBT83Q10RRQ1S with PID 12412 (D:\J2EE_Workspace\springbootTest\target\classes started by lss0555 in D:\J2EE_Workspace\springbootTest)
+2018-11-23 10:32:16 3246 [main] INFO  c.e.s.SpingbootTestApplication - The following profiles are active: pro
+2018-11-23 10:32:45 2670 [main] INFO  c.e.s.SpingbootTestApplication - Starting SpingbootTestApplication on XHCBT83Q10RRQ1S with PID 6612 (D:\J2EE_Workspace\springbootTest\target\classes started by lss0555 in D:\J2EE_Workspace\springbootTest)
+2018-11-23 10:32:45 2701 [main] INFO  c.e.s.SpingbootTestApplication - The following profiles are active: pro
+2018-11-23 10:33:02 19542 [main] INFO  c.e.s.SpingbootTestApplication - Started SpingbootTestApplication in 18.802 seconds (JVM running for 20.115)
+2018-11-23 10:33:05 22969 [http-nio-8085-exec-9] INFO  c.e.s.controller.TestController - 测试info
+2018-11-23 10:33:05 23000 [http-nio-8085-exec-9] INFO  c.e.s.common.aop.LogAspect - 接口日志:方法名称:com.example.springbootTest.controller.TestController---执行时间:---41毫秒
+2018-11-23 10:36:01 2765 [main] INFO  c.e.s.SpingbootTestApplication - Starting SpingbootTestApplication on XHCBT83Q10RRQ1S with PID 10176 (D:\J2EE_Workspace\springbootTest\target\classes started by lss0555 in D:\J2EE_Workspace\springbootTest)
+2018-11-23 10:36:01 2788 [main] INFO  c.e.s.SpingbootTestApplication - The following profiles are active: pro
+2018-11-23 10:36:28 30028 [main] INFO  c.e.s.SpingbootTestApplication - Started SpingbootTestApplication in 29.219 seconds (JVM running for 30.644)
+2018-11-23 10:36:34 36456 [http-nio-8085-exec-10] INFO  c.e.s.controller.TestController - 测试info
+2018-11-23 10:36:34 36464 [http-nio-8085-exec-10] INFO  c.e.s.common.aop.LogAspect - 接口日志:类名称:com.example.springbootTest.controller.TestController
+方法名:test
+执行时间:13毫秒
+2018-11-23 10:37:51 3464 [main] INFO  c.e.s.SpingbootTestApplication - Starting SpingbootTestApplication on XHCBT83Q10RRQ1S with PID 4952 (D:\J2EE_Workspace\springbootTest\target\classes started by lss0555 in D:\J2EE_Workspace\springbootTest)
+2018-11-23 10:37:51 3470 [main] INFO  c.e.s.SpingbootTestApplication - The following profiles are active: pro
+2018-11-23 10:38:23 3151 [main] INFO  c.e.s.SpingbootTestApplication - Starting SpingbootTestApplication on XHCBT83Q10RRQ1S with PID 9068 (D:\J2EE_Workspace\springbootTest\target\classes started by lss0555 in D:\J2EE_Workspace\springbootTest)
+2018-11-23 10:38:23 3158 [main] INFO  c.e.s.SpingbootTestApplication - The following profiles are active: pro
+2018-11-23 10:38:45 25191 [main] INFO  c.e.s.SpingbootTestApplication - Started SpingbootTestApplication in 24.338 seconds (JVM running for 25.877)
+2018-11-23 10:41:06 166115 [http-nio-8085-exec-2] INFO  c.e.s.controller.TestController - 测试info
+2018-11-23 10:41:06 166128 [http-nio-8085-exec-2] INFO  c.e.s.common.aop.LogAspect - ------------------------接口日志-----------------------
+类名称:com.example.springbootTest.controller.TestController
+方法名:test
+执行时间:38毫秒
+2018-11-23 10:43:12 2914 [main] INFO  c.e.s.SpingbootTestApplication - Starting SpingbootTestApplication on XHCBT83Q10RRQ1S with PID 11436 (D:\J2EE_Workspace\springbootTest\target\classes started by lss0555 in D:\J2EE_Workspace\springbootTest)
+2018-11-23 10:43:12 2923 [main] INFO  c.e.s.SpingbootTestApplication - The following profiles are active: pro
+2018-11-23 10:43:30 20817 [main] INFO  c.e.s.SpingbootTestApplication - Started SpingbootTestApplication in 20.021 seconds (JVM running for 21.541)
+2018-11-23 10:44:14 65071 [http-nio-8085-exec-1] INFO  c.e.s.controller.TestController - 测试info
+2018-11-23 10:44:57 3076 [main] INFO  c.e.s.SpingbootTestApplication - Starting SpingbootTestApplication on XHCBT83Q10RRQ1S with PID 7580 (D:\J2EE_Workspace\springbootTest\target\classes started by lss0555 in D:\J2EE_Workspace\springbootTest)
+2018-11-23 10:44:57 3086 [main] INFO  c.e.s.SpingbootTestApplication - The following profiles are active: pro
+2018-11-23 10:45:19 25199 [main] INFO  c.e.s.SpingbootTestApplication - Started SpingbootTestApplication in 24.486 seconds (JVM running for 25.847)
+2018-11-23 10:45:55 61397 [http-nio-8085-exec-10] INFO  c.e.s.controller.TestController - 测试info
+2018-11-23 10:45:58 64265 [http-nio-8085-exec-9] INFO  c.e.s.controller.TestController - 测试info

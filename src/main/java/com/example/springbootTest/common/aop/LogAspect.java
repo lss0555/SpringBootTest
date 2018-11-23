@@ -25,11 +25,8 @@ import org.springframework.stereotype.Component;
 /**
  * 记录调用Controller的日志
  */
-@Order(value = 1)
 @Component  //声明组件
 @Aspect //  声明切面
-@ComponentScan  //组件自动扫描
-@EnableAspectJAutoProxy //spring自动切换JDK动态代理和CGLIB
 public class LogAspect {
     /**
      *自定义日志

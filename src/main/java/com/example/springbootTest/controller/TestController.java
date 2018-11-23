@@ -1,5 +1,6 @@
 package com.example.springbootTest.controller;
 
+import com.example.springbootTest.common.annotation.Log;
 import com.example.springbootTest.common.aop.LogAspect;
 import com.example.springbootTest.dao.inter.PatientDaoInter;
 import com.example.springbootTest.dao.inter.UserDaoInter;
@@ -30,8 +31,12 @@ public class TestController {
     PatientDaoInter patientDaoInter;
 
     @GetMapping("/test")
+    @Log
     public String test(){
-        logger.info("测试");
+        logger.info("测试info");
+        logger.debug("测试debug");
+        logger.error("测试error");
+        logger.warn("测试warn");
         return "hello  world";
     }
 

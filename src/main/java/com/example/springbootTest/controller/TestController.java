@@ -1,7 +1,6 @@
 package com.example.springbootTest.controller;
 
 import com.example.springbootTest.common.annotation.Log;
-import com.example.springbootTest.common.aop.LogAspect;
 import com.example.springbootTest.dao.inter.PatientDaoInter;
 import com.example.springbootTest.dao.inter.UserDaoInter;
 import com.example.springbootTest.model.Patient;
@@ -33,10 +32,6 @@ public class TestController {
     @GetMapping("/test")
     @Log
     public String test(){
-        logger.info("测试info");
-        logger.debug("测试debug");
-        logger.error("测试error");
-        logger.warn("测试warn");
         return "hello  world";
     }
 
@@ -48,13 +43,6 @@ public class TestController {
         return result;
     }
 
-    @GetMapping("/user1")
-    public TResult getUserList1(){
-        List<User> users = userDaoInter.usersList();
-        TResult<User> result = new TResult<>();
-        result.setList(users);
-        return result;
-    }
 
     @GetMapping("/patient")
     public TResult getPatientList(){

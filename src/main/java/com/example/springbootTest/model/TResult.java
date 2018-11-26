@@ -17,4 +17,12 @@ public class TResult<T> {
     private T model;
     private List<T> list;
 
+    public TResult<T> tResult(T t,int errorCode,List<T> list){
+        TResult<T> result = new TResult<>();
+        result.setModel(t);
+        result.setErrorCode(errorCode);
+        result.setList(list);
+        return result;
+    }
+
 }

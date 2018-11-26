@@ -1,6 +1,5 @@
 package com.example.springbootTest.common.aop;
 
-
 import com.alibaba.fastjson.JSON;
 import javassist.Modifier;
 import org.apache.commons.lang3.ArrayUtils;
@@ -17,9 +16,7 @@ import org.aspectj.lang.annotation.Before;
 import org.aspectj.lang.annotation.Pointcut;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.springframework.context.annotation.ComponentScan;
-import org.springframework.context.annotation.EnableAspectJAutoProxy;
-import org.springframework.core.annotation.Order;
+import org.springframework.context.annotation.Configuration;
 import org.springframework.stereotype.Component;
 
 /**
@@ -27,6 +24,7 @@ import org.springframework.stereotype.Component;
  */
 @Component  //声明组件
 @Aspect //  声明切面
+@Configuration
 public class LogAspect {
     /**
      *自定义日志
@@ -130,8 +128,7 @@ public class LogAspect {
         for (int i=0;i<paramsArgsName.length;i++){
             //参数名
             String name = paramsArgsName[i];
-            if(name.equals("this"))
-            {
+            if(name.equals("this")) {
                 continue;
             }
             //参数值

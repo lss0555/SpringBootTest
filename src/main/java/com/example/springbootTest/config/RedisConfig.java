@@ -4,9 +4,11 @@ import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.data.redis.connection.RedisConnectionFactory;
 import org.springframework.data.redis.connection.jedis.JedisConnectionFactory;
 import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.data.redis.core.StringRedisTemplate;
+import org.springframework.data.redis.serializer.GenericJackson2JsonRedisSerializer;
 import org.springframework.data.redis.serializer.StringRedisSerializer;
 import redis.clients.jedis.JedisPoolConfig;
 
@@ -33,15 +35,26 @@ public class RedisConfig {
         return factory;
     }
 
+
+    /**
+     * 实例化 RedisTemplate 对象
+     * @return
+     */
     @Bean
-    public RedisTemplate<?, ?> getRedisTemplate() {
+    public RedisTemplate<String, Object> getRedisTemplate() {
         JedisConnectionFactory factory = getConnectionFactory();
-        RedisTemplate<?, ?> template = new StringRedisTemplate(factory);
+//        RedisTemplate<String, Object> template = new StringRedisTemplate(factory);
+        RedisTemplate<String, Object> template = new RedisTemplate<>();
+        ////如果不配置Serializer，那么存储的时候缺省使用String，如果用User类型存储，那么会提示错误User can't cast to String！
         StringRedisSerializer stringSerializer = new StringRedisSerializer();
         template.setKeySerializer(stringSerializer);
+        template.setStringSerializer(stringSerializer);
         template.setValueSerializer(stringSerializer);
-        template.setHashKeySerializer(stringSerializer);
-        template.setHashValueSerializer(stringSerializer);
+        template.setHashValueSerializer(new GenericJackson2JsonRedisSerializer());
+        template.setValueSerializer(new GenericJackson2JsonRedisSerializer());
+        //开启事务
+        template.setEnableTransactionSupport(true);
+        template.setConnectionFactory(factory);
         return template;
     }
 

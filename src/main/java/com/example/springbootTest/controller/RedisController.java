@@ -1,9 +1,13 @@
 package com.example.springbootTest.controller;
 
 import com.alibaba.fastjson.JSON;
+import com.example.springbootTest.common.aop.LogAspect;
 import com.example.springbootTest.config.RedisServiceInter;
 import com.example.springbootTest.model.User;
+import com.example.springbootTest.rocks.RedisLock;
 import com.example.springbootTest.utils.RedisUtil;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.data.redis.serializer.GenericToStringSerializer;
 import org.springframework.data.redis.serializer.JdkSerializationRedisSerializer;
@@ -17,6 +21,8 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
+import java.util.concurrent.locks.Lock;
+import java.util.concurrent.locks.ReentrantLock;
 
 import static java.util.concurrent.Executors.newCachedThreadPool;
 import static org.apache.coyote.http11.Constants.a;
@@ -28,6 +34,7 @@ import static org.apache.coyote.http11.Constants.a;
  **/
 @RestController
 public class RedisController {
+    private Logger logger = LoggerFactory.getLogger(RedisController.class);
     @Resource
     private RedisServiceInter redisService;
 

@@ -74,4 +74,8 @@ public interface RedisServiceInter {
     Object lGetIndex(String key,long index);
     boolean lUpdateIndex(String key, long index,Object value);
     long lRemove(String key,long count,Object value);
+
+    boolean setNx(String key,String value,long time);
+    String getNx(String key);
+    boolean releaseLock(String key,String value);//lu脚本
 }

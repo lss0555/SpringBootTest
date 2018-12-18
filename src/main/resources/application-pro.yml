@@ -64,6 +64,7 @@ datasource:
     maxOpenPreparedStatements: 20
 redis:
     host: 194.0.11.50
+#    host: 192.168.153.133
     port: 6379
 #    password: 888888
     # 连接超时时间（毫秒）
@@ -77,3 +78,12 @@ redis:
       max-active: 100
       # 连接池最大阻塞等待时间（使用负值表示没有限制）
       max-wait: -1
+spring:
+  rabbitmq:
+    host: 192.168.153.133
+    port: 5672
+    username: lss
+    password: 888888
+    virtual-host: /
+
+

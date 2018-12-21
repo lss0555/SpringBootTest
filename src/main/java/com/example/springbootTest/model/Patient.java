@@ -21,4 +21,17 @@ public class Patient {
     String s_glide;
     String s_office;
     String s_name;
+
+    @Override
+    public String toString() {
+        return "Patient{" +
+                "userName='" + userName + '\'' +
+                ", password='" + password + '\'' +
+                ", userKey='" + userKey + '\'' +
+                ", token='" + token + '\'' +
+                ", s_glide='" + s_glide + '\'' +
+                ", s_office='" + s_office + '\'' +
+                ", s_name='" + s_name + '\'' +
+                '}';
+    }
 }

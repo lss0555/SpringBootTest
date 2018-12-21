@@ -25,4 +25,36 @@ public class TResult<T> {
         return result;
     }
 
+    public int getErrorCode() {
+        return errorCode;
+    }
+
+    public void setErrorCode(int errorCode) {
+        this.errorCode = errorCode;
+    }
+
+    public T getModel() {
+        return model;
+    }
+
+    public void setModel(T model) {
+        this.model = model;
+    }
+
+    public List<T> getList() {
+        return list;
+    }
+
+    public void setList(List<T> list) {
+        this.list = list;
+    }
+
+    @Override
+    public String toString() {
+        return "TResult{" +
+                "errorCode=" + errorCode +
+                ", model=" + model +
+                ", list=" + list +
+                '}';
+    }
 }

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="TestDependency">
+
+    <test name="TestCase1">
+
+        <classes>
+            <class
+                    name="com.example.springbootTest.testNg.depend.dependsOnGroups.TestApp">
+            </class>
+            <class
+                    name="com.example.springbootTest.testNg.depend.dependsOnGroups.TestDatabase">
+            </class>
+            <class
+                    name="com.example.springbootTest.testNg.depend.dependsOnGroups.TestServer">
+            </class>
+        </classes>
+
+    </test>
+
+</suite>

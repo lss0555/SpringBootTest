@@ -1,4 +1,4 @@
-package com.example.springbootTest.controller;
+package com.example.springbootTest.testNg;
 
 import com.example.springbootTest.common.annotation.Log;
 import com.example.springbootTest.dao.inter.PatientDaoInter;

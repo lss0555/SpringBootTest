@@ -5,13 +5,10 @@
 
         <classes>
             <class
-                    name="com.example.springbootTest.testNg.depend.dependsOnGroups.TestApp">
+                    name="com.example.springbootTest.testNg.depend.dependsOnGroups.Test1">
             </class>
             <class
-                    name="com.example.springbootTest.testNg.depend.dependsOnGroups.TestDatabase">
-            </class>
-            <class
-                    name="com.example.springbootTest.testNg.depend.dependsOnGroups.TestServer">
+                    name="com.example.springbootTest.testNg.depend.dependsOnGroups.Test2">
             </class>
         </classes>
 

@@ -2,34 +2,22 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 
 <suite name="TestAll">
-
-    <!--
-    runSelenium()和runSelenium1()属于分组：selenium-test。testConnectOracle()和testConnectMsSQL()属于分组：database 。
-    如果分组selenium-test和database通过，则runFinal()将被执行。
-    -->
-
-    <test name="final">
+    <test name="test1">
         <classes>
-            <class name="com.example.springbootTest.testNg.group.TestSelenium" />
+            <class name="com.example.springbootTest.testNg.group.TestGroup2" />
             <class name="com.example.springbootTest.testNg.group.TestGroup" />
         </classes>
     </test>
-
-    <!-- Run test method on group "selenium" only -->
-    <test name="selenium">
-
+    <test name="test2">
         <!-- 指定运行分组-->
         <groups>
             <run>
-                <include name="selenium-test" />
+                <include name="groups2" />
             </run>
         </groups>
-
         <classes>
-            <class name="com.example.springbootTest.testNg.group.TestSelenium" />
+            <class name="com.example.springbootTest.testNg.group.TestGroup2" />
             <class name="com.example.springbootTest.testNg.group.TestGroup" />
         </classes>
-
     </test>
-
 </suite>

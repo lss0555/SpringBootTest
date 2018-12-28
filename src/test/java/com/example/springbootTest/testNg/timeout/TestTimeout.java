@@ -15,7 +15,7 @@ public class TestTimeout {
      * @Description  “超时”表示如果单元测试花费的时间超过指定的毫秒数，
      * 那么TestNG将会中止它并将其标记为失败。“超时”也可用于性能测试，以确保方法在合理的时间内返回。
      **/
-    
+
     /**
      * @Description  超时设置
      **/
@@ -36,7 +36,7 @@ public class TestTimeout {
         System.out.println("超时4秒收执行,时间:"+new Date());
     }
 
-    @Test(timeOut = 1000)
+    @Test(timeOut = 500)
     public void testThisShouldFail() {
         while (true){
             // do nothing

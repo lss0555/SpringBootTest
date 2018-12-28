@@ -1,26 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 
-<!-- @BeforeSuite -->
 <suite name="TestAll">
 
-    <!-- @BeforeTest -->
     <test name="case1">
         <classes>
-            <class name="com.example.springbootTest.testNg.kit.TestDBConnection" />
-            <class name="com.example.springbootTest.testNg.kit.DBConfig" />
+            <class name="com.example.springbootTest.testNg.kit.Test2" />
+            <class name="com.example.springbootTest.testNg.kit.Test1" />
         </classes>
     </test>
-    <!-- @AfterTest -->
 
-    <!-- @BeforeTest -->
-    <!--<test name="case2">-->
-        <!--<classes>-->
-            <!--<class name="com.example.springbootTest.testNg.kit.TestDBConnection" />-->
-            <!--<class name="com.example.springbootTest.testNg.kit.DBConfig" />-->
-        <!--</classes>-->
-    <!--</test>-->
-    <!-- @AfterTest -->
+    <test name="case2">
+        <classes>
+            <class name="com.example.springbootTest.testNg.kit.Test2" />
+            <class name="com.example.springbootTest.testNg.kit.Test1" />
+        </classes>
+    </test>
 
 </suite>
-        <!-- @AfterSuite -->

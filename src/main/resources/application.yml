@@ -22,3 +22,4 @@ mybatis:
   type-aliases-package: com.example.springbootTest.model
   mapper-locations: classpath*:mapping/*.xml
 
+

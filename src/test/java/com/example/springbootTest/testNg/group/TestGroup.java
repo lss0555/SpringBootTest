@@ -10,39 +10,24 @@ import org.testng.annotations.Test;
  * @Date 2018/12/21/021 16:58
  **/
 public class TestGroup {
-    @BeforeGroups("database")
+    @BeforeGroups("groups1")
     public void setupDB() {
         System.out.println("setupDB()");
     }
-
-    @AfterGroups("database")
+    @AfterGroups("groups2")
     public void cleanDB() {
         System.out.println("cleanDB()");
     }
-
-    @Test(groups = "selenium-test")
+    @Test(groups = "groups1")
     public void runSelenium() {
-        System.out.println("runSelenium()");
+        System.out.println("groups1()");
     }
-
-    @Test(groups = "selenium-test")
-    public void runSelenium1() {
-        System.out.println("runSelenium()1");
-    }
-
-    @Test(groups = "database")
-    public void testConnectOracle() {
-        System.out.println("testConnectOracle()");
-    }
-
-    @Test(groups = "database")
+    @Test(groups = "groups2")
     public void testConnectMsSQL() {
-        System.out.println("testConnectMsSQL");
+        System.out.println("groups2");
     }
-
-    @Test(dependsOnGroups = { "database", "selenium-test" })
+    @Test(dependsOnGroups = { "groups1", "groups2" })
     public void runFinal() {
         System.out.println("runFinal");
     }
-
 }

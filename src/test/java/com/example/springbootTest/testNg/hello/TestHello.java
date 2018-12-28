@@ -25,4 +25,9 @@ public class TestHello extends BaseTestNg {
 
     }
 
+    @Test
+    public void test(){
+        System.out.println("hello world");
+    }
+
 }

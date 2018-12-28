@@ -11,5 +11,6 @@ public class UserSaveException extends RuntimeException {
 
     public UserSaveException(String msg){
         super(msg);
+        System.out.println("异常信息:"+msg);
     }
 }

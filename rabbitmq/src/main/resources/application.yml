@@ -1,0 +1,9 @@
+server:
+  port: 8010
+spring:
+  rabbitmq:
+    host: 192.168.153.135
+    port: 5672
+    username: lss
+    password: 888888
+    virtual-host: /

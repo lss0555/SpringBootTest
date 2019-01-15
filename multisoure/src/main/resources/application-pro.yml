@@ -1,0 +1,12 @@
+custom:
+  datasource:
+    names: date2
+    date2:
+     driver-class-name: com.mysql.jdbc.Driver
+     url: jdbc:mysql://127.0.0.1:3306/lss0555?serverTimezone=UTC&characterEncoding=utf-8
+     username: root
+     password: 888888
+     validation-query: SELECT 1
+     time-between-eviction-runs-millis: 600000
+     min-evictable-idle-time-millis: 1800000
+     maximum-pool-size: 80

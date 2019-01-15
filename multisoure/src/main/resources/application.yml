@@ -1,0 +1,22 @@
+server:
+  port: 8012
+spring:
+  profiles:
+    active: pro
+  datasource:
+    driver-class-name:  com.microsoft.sqlserver.jdbc.SQLServerDriver
+    url: jdbc:sqlserver://127.0.0.1;DatabaseName=lss05555
+    username: sa
+    password: 888888
+    dbcp2:
+      validation-query: select 1 from dual
+      test-on-borrow: true
+      min-evictable-idle-time-millis: 600000
+      time-between-eviction-runs-millis: 300000
+
+
+mybatis:
+  configuration:
+    mapUnderscoreToCamelCase: false
+  type-aliases-package: com.example.multisource.model
+  mapper-locations: classpath*:mapping/*.xml

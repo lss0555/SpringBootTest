@@ -20,3 +20,11 @@ mybatis:
   mapper-locations: classpath*:mapping/*.xml
 
 
+pagehelper:
+    helperDialect: mysql
+    reasonable: false
+    supportMethodsArguments: true
+    params: count=countSql
+    offset-as-page-num: true
+    row-bounds-with-count: true
+

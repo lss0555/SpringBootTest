@@ -9,6 +9,7 @@ public class TResult<T> {
     private int errorCode;
     private T model;
     private List<T> list;
+    private List<T> rows;
 
     public TResult<T> tResult(T t, int errorCode, List<T> list) {
         TResult<T> result = new TResult<>();
@@ -49,5 +50,13 @@ public class TResult<T> {
                 ", model=" + model +
                 ", list=" + list +
                 '}';
+    }
+
+    public List<T> getRows() {
+        return rows;
+    }
+
+    public void setRows(List<T> rows) {
+        this.rows = rows;
     }
 }

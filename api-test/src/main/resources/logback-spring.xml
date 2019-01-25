@@ -29,7 +29,7 @@
     </appender>
 
     <!-- 日志输出级别 -->
-    <root name="com.example.apitest" level="DEBUG">
+    <root name="com.example.apitest" level="info">
         <appender-ref ref="STDOUT" />
     </root>
 </configuration>

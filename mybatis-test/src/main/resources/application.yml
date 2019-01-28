@@ -1,0 +1,32 @@
+server:
+  port: 8016
+spring:
+  datasource:
+    driver-class-name:  com.mysql.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/lss0555?serverTimezone=UTC&characterEncoding=utf-8
+    username: root
+    password: 888888
+    dbcp2:
+      validation-query: select 1 from dual
+      test-on-borrow: true
+      min-evictable-idle-time-millis: 600000
+      time-between-eviction-runs-millis: 300000
+  redis:
+    host: 127.0.0.1
+    port: 6379
+    password: 888888
+    timeout: 10000
+    jedis:
+      pool:
+        max-idle: 8
+        min-idle: 10
+        max-active: 100
+        max-wait: -1
+
+
+mybatis:
+  configuration:
+    mapUnderscoreToCamelCase: false
+    cache-enabled: true
+  type-aliases-package: com.example.mybatistest.model
+  mapper-locations: classpath*:mapping/*.xml

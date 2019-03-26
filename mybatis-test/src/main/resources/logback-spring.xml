@@ -29,7 +29,7 @@
     </appender>
 
     <!-- 日志输出级别 -->
-    <root name="com.example.mybatistest" level="debug">
-        <appender-ref ref="STDOUT" />
+    <root name="com.example.mybatistest" level="info">
+        <appender-ref ref="FILE" />
     </root>
 </configuration>

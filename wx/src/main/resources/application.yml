@@ -1,0 +1,29 @@
+server:
+  port: 82
+spring:
+  datasource:
+    driver-class-name:  com.microsoft.sqlserver.jdbc.SQLServerDriver
+    url: jdbc:sqlserver://192.0.12.254;DatabaseName=wechat;sendStringParametersAsUnicode=false
+    username: wx_qzzg
+    password: love#0401
+    dbcp2:
+      validation-query: select 1 from dual
+      test-on-borrow: true
+      min-evictable-idle-time-millis: 600000
+      time-between-eviction-runs-millis: 300000
+  thymeleaf:
+    mode: LEGACYHTML5
+    cache: false
+    suffix: .html
+    encoding: UTF-8
+    servlet:
+      content-type: text/html
+    prefix: classpath:/templates/
+
+  aop:
+    auto: true
+    proxy-target-class: true
+
+FILE_ROOT: /uploadFile/
+
+

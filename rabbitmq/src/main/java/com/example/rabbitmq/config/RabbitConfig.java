@@ -13,6 +13,12 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Scope;
 
+import java.util.Date;
+import java.util.Random;
+import java.util.concurrent.Executors;
+import java.util.concurrent.ScheduledExecutorService;
+import java.util.concurrent.TimeUnit;
+
 /**
  * @Description rabbitmq配置类
  * @Author lss0555
@@ -109,16 +115,16 @@ public class RabbitConfig {
 
     @Bean
     public Queue queueB() {
-        return new Queue(QUEUE_B, true); //队列持久
+        return new Queue(QUEUE_B, false); //队列持久
     }
 
     @Bean
     public Queue queueC() {
-        return new Queue(QUEUE_C, true); //队列持久
+        return new Queue(QUEUE_C, false); //队列持久
     }
     @Bean
     public Queue queueD() {
-        return new Queue(QUEUE_D, true); //队列持久
+        return new Queue(QUEUE_D, false); //队列持久
     }
 
 

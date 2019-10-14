@@ -16,6 +16,17 @@ public class RabbitSendMsgController {
     RabbitMsgProduct msgProducer;
 
     //单发送单接收
+    @GetMapping("/sendMsg")
+    public String sendMsg(Integer num){
+        if(num!=null){
+            for (int i=0;i<num;i++){
+                msgProducer.sendMsg1(""+i);
+            }
+        }
+        return "success";
+    }
+
+    //单发送单接收
     @GetMapping("/sendMsg1")
     public String sendMsg1(String msg){
         if(msg==null&&msg.equals("")){

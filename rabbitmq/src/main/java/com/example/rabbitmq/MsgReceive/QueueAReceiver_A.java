@@ -12,13 +12,13 @@ import org.springframework.stereotype.Component;
  * @Author lss0555
  * @Date 2018/12/17/017 17:13
  **/
-@Component
+    @Component
     public class QueueAReceiver_A {
     private final Logger logger = LoggerFactory.getLogger(this.getClass());
 
-    @RabbitHandler
-    @RabbitListener(queues = RabbitConfig.QUEUE_A)
-    public void process(String msg) {
-        logger.info("接收处理队列A消息： " +msg);
-    }
+//    @RabbitHandler
+//    @RabbitListener(queues = RabbitConfig.QUEUE_A)
+//    public void process(String msg) {
+//        logger.info("接收处理队列A消息： " +msg);
+//    }
 }

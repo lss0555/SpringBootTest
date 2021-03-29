@@ -15,10 +15,8 @@ import org.springframework.context.annotation.Import;
 @SpringBootApplication
 @MapperScan(basePackages  = "com.example.apitest.dao")
 public class ApiTestApplication {
-
 	public static void main(String[] args) {
 		SpringApplication.run(ApiTestApplication.class, args);
 	}
-
 }
 

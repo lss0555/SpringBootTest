@@ -1,0 +1,18 @@
+SELECT   DISTINCT Rtrim(his_patient_man.s_hospital_no) + '|' + Rtrim(s_name) + '|' + s_bed_no,
+                  s_bed_no
+FROM     his_patient_man
+         JOIN his_patient_account
+           ON his_patient_man.s_ic_no = his_patient_account.s_ic_no
+		  JOIN his_patient_man_twmx
+           ON his_patient_man_twmx.s_hospital_no = his_patient_man.s_hospital_no
+              AND his_patient_man_twmx.s_card_ic = his_patient_man.s_ic_no
+WHERE    (( his_patient_man_twmx.n_tw>=39 and Convert(VARCHAR(100),d_check_time,23) > Convert(VARCHAR(100),Getdate() - 3,23))
+           OR (n_fz = ?))
+         AND (his_patient_account.s_in_mark = '1')
+         AND (his_patient_man.d_time_enter IS NOT NULL )
+         AND (Left(his_patient_man.s_hospital_no,1) <> 'T')
+         AND (s_bed_no <> ''
+               OR s_bed_no IS NOT NULL )
+         AND (his_patient_man.s_office_now BETWEEN ?
+                                                   AND ?)
+ORDER BY s_bed_no

@@ -25,4 +25,9 @@ public class UserController {
         result.setList(userDaoMapper.userList());
         return result;
     }
+
+    public static void main(String[] args) {
+        int a=1;
+        System.out.println("求余："+a%10);
+    }
 }
